@@ -56,3 +56,15 @@ body {
   margin-left: 30px;
   margin-right: 580px;
 }
+
+.card--container {
+  margin-left: 30px;
+}
+
+.card--image {
+  width: 500px;
+}
+
+.card--star {
+  width: 30px;
+}
