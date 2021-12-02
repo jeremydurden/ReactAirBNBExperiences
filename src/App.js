@@ -1,7 +1,15 @@
+//Style sheet
 import "./style.css";
 
+//Components
+import Navbar from "./Components/Navbar";
+
 function App() {
-  return <h1>Hello React</h1>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
