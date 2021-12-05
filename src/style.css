@@ -57,8 +57,17 @@ body {
   margin-right: 580px;
 }
 
+/*  CARD  */
+/*  CARD  */
+/*  CARD  */
+/*  CARD  */
+
 .card--container {
   margin-left: 30px;
+  max-width: 500px;
+
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .card--image {
@@ -66,5 +75,31 @@ body {
 }
 
 .card--star {
-  width: 30px;
+  width: 21px;
+  display: inline;
+  margin-right: 5px;
+}
+
+.card--rating {
+  display: inline;
+  font-size: 24px;
+}
+
+.card--rating-span {
+  color: #918e9b;
+}
+
+.card--title {
+  font-size: 24px;
+  font-weight: 300;
+  color: #222222;
+  line-height: 200%;
+}
+
+.card--cost {
+  font-size: 24px;
+}
+
+.card--cost-span {
+  font-weight: 600;
 }
