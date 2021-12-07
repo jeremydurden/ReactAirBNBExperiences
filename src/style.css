@@ -68,6 +68,7 @@ body {
 
   margin-top: 80px;
   margin-bottom: 50px;
+  position: relative;
 }
 
 .card--image {
@@ -105,9 +106,20 @@ body {
   font-weight: 600;
 }
 
-.card-list {
+.card--list {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   gap: 20px;
+}
+
+.card--badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  border-radius: 4px;
+  padding: 4px 15px;
+  font-weight: 600;
+  font-size: 24px;
 }

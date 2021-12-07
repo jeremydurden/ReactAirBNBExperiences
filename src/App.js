@@ -21,6 +21,7 @@ function App() {
         location={card.location}
         title={card.title}
         price={card.price}
+        openSpots={card.openSpots}
       />
     );
   });
@@ -28,7 +29,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <section className="card-list">{cards}</section>
+      <section className="card--list">{cards}</section>
     </>
   );
 }
