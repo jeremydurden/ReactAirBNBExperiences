@@ -6,24 +6,39 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Card from "./Components/Card";
 
-//Images
-import katie from "./Images/katie.svg";
+//Data
+import data from "./data.js";
 
 function App() {
+  console.log(data);
+  const cards = data.map((card) => {
+    return (
+      <Card
+        img={card.coverImg}
+        rating={card.stats.rating}
+        reviewCount={card.stats.reviewCount}
+        location={card.location}
+        title={card.title}
+        price={card.price}
+      />
+    );
+  });
   return (
     <>
       <Navbar />
       <Hero />
-      <Card
-        img={katie}
-        rating={"5.0"}
-        reviewCount={6}
-        country={"USA"}
-        title={"Life Lessons with Katie Zaferes"}
-        price={136}
-      />
+      {cards}
     </>
   );
 }
 
 export default App;
+
+//{ <Card
+//img={katie}
+//rating={"5.0"}
+//reviewCount={6}
+//country={"USA"}
+//title={"Life Lessons with Katie Zaferes"}
+//price={136}
+///> } }

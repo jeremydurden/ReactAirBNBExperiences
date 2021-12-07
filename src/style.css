@@ -72,6 +72,7 @@ body {
 
 .card--image {
   width: 500px;
+  border-radius: 25px;
 }
 
 .card--star {
